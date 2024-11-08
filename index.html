@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title" class="text-center">
+          Survey for Bootcamp Student Batch 1
+        </h1>
+        <p id="description" class="description text-center">
+          We appreciate your feedback! Please, kindly fill the form! Thank you.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            class="form-control"
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            class="form-control"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input
+            class="form-control"
+            id="number"
+            type="number"
+            name="age"
+            min="10"
+            max="100"
+            required
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Choose Program</p>
+          <select class="form-control" name="program" id="dropdown" required>
+            <option value="" disabled selected>Select program</option>
+            <option value="upskill">Upskill</option>
+            <option value="job">Get A Job</option>
+            <option value="refund">Refund Guarantee</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Current Employment Status</p>
+          <label for="employed"
+            ><input
+              class="input-radio"
+              type="radio"
+              value="employed"
+              name="employment-status"
+              checked
+            />Employed
+          </label>
+          <label
+            ><input
+              class="input-radio"
+              type="radio"
+              value="unemployed"
+              name="employment-status"
+            />Unemployed</label
+          >
+          <label
+            ><input
+              class="input-radio"
+              type="radio"
+              value="student"
+              name="employment-status"
+            />Student</label
+          >
+        </div>
+        <div class="form-group">
+          <p>What Study Program do you like?</p>
+          <label for="fullstack"
+            ><input
+              class="input-checkbox"
+              type="checkbox"
+              value="fullstack"
+              name="fullstack"
+            />Full Stack</label
+          >
+          <label for="frontend"
+            ><input
+              class="input-checkbox"
+              type="checkbox"
+              value="frontend"
+              name="frontend"
+            />Front End</label
+          >
+          <label for="backend"
+            ><input
+              class="input-checkbox"
+              type="checkbox"
+              value="backend"
+              name="backend"
+            />Back End</label
+          >
+          <label for="uiux"
+            ><input
+              class="input-checkbox"
+              type="checkbox"
+              value="uiux"
+              name="uiux"
+            />Ui-Ux Designer</label
+          >
+        </div>
+        <div class="form-group">
+          <p>
+            Briefly tell us about your commitment to taking part in this
+            bootcamp program
+          </p>
+          <textarea
+            class="input-textarea"
+            name="commit"
+            id="commit"
+            placeholder="Input your commitment in here ..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" class="submit-button" type="submit">
+            Sumbit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
